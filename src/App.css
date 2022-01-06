@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+.center-object {
+  margin: 0 auto;
+  width: 71%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.making-row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+}
+.text-pointer {
+  cursor: pointer;
+}
+.text-pointer:hover {
+  color: rgba(77, 17, 17);
 }
 
-.App-link {
-  color: #61dafb;
+.erste-row-scale {
+  margin-top: 31px;
+  display: flex;
+}
+img {
+  height: 311px;
+  width: 311px;
+  object-fit: cover;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+.erste-rwo-left0side-grid {
+  margin-left: 51px;
+}
+.main-name {
+  font-size: 31px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.basic-infor-frame {
+  margin-top: 11px;
+  padding-top: 31px;
+  width: 100%;
+  border: 1px solid blanchedalmond;
+  border-radius: 11px;
+  animation-name: basic-infor-frame-right-moving-left;
+  animation-duration: 3s;
+}
+@keyframes basic-infor-frame-right-moving-left {
+  0% {
+    color: aliceblue
+  }
+  51% {
+    color: rgb(221, 68, 8);
+    text-shadow: 0 0 10px rgb(247, 238, 238),
+                 0 0 20px rgb(247, 238, 238),
+                 0 0 40px rgb(247, 238, 238),
+  }
+  100% {
+    color: black;
+  }
+}
+.basic-infor-frame:hover {
+  border: 2px solid rgb(92, 87, 80);
+  box-shadow: 0 7px 7px 0 solid rgb(0, 0, 0);
+}
+.basic-infor-frame-erste-text {
+  font-family: 'Courier New', Courier, monospace;
+  margin-right: 11px;
+  height: 37px;
+  width: 171px;
+  text-align: right;
+}
+.basic-infor-frame-zweite-text {
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 511px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.zeite-row-scale {
+  margin-top: 31px;
+}
+.title-text-frame {
+  height: 51px;
+  font-size: 31px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid rgb(182, 65, 65);
+  width: 311px;
 }
