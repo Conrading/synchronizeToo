@@ -1,0 +1,361 @@
+
+.center-object {
+    position: relative;
+    align-content: center;
+    justify-content: center;
+}
+.object-right {
+    position: relative;
+    right: 0px;
+    justify-content: right;
+}
+.object-left {
+    position: relative;
+    left: 0px;
+    justify-content: left;
+}
+.making-row {
+    display: flex;
+    flex-direction: row;
+}
+.text-row-height {
+    height: 37px;
+}
+.separate-two-side {
+    justify-content: space-between
+}
+.width-control-sieben {
+    width: 71%;
+}
+.width-control-drei {
+    width: 31%;
+}
+.gap-upper {
+    margin-top: 20px;
+}
+.gap-both-siebzehn {
+    margin-left: 17px;
+    margin-left: 17px;
+}
+.center-text {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-trademakr-infor {
+    color: #3d5770;
+    font-family: Courier New;
+}
+.text-anmeldung-title {
+    font-size: 7mm;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.text-pointer {
+    cursor: pointer;
+}
+.text-pointer:hover {
+    color: rgba(77, 17, 17);
+}
+.text-contract-party-height {
+    height: 57px;
+}
+.text-block-ersten-infor {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+}
+.text-left-gap {
+    margin-left: .5rem;
+}
+/**/
+
+.left-gap {
+    margin-left: 60px; 
+}
+.clause-title-text {
+    margin-right: 60px; 
+    text-align: right;
+    vertical-align: middle;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+.editor-main {
+    overflow: auto;
+    box-sizing: border-box;
+    border: 1px solid rgb(199, 198, 198);
+    border-radius: 10px;
+    min-height: 71px;
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.6);
+}
+.modal-container {
+    border-radius: 25px;
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    background: #f7f7f7;
+    left: 10%;
+    top: 10%;
+    padding: 20px;
+}
+.modal-close {
+    position: relative;
+    right: 5%;
+    float: right;
+}
+
+/**/
+
+.block-anmeldung {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    height: 371px;
+    width: 31%;
+    border-radius: 5px;
+    border: 0.5px solid rgb(224, 222, 222);
+    margin: auto;
+}
+.block-anmeldung:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.logo-anmeldung {
+    height: 111px;
+}
+.input-anmeldung {
+    border: 0.5px solid rgb(224, 222, 222);
+    border-radius: 3px;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);
+    background-color: beige;
+}
+.contract-general {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.input-second-party {
+    margin-right: 5px;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+}
+.input-contract-detail {
+    border-radius: 5px;
+    width: 210px;
+    height: 27px;
+}
+.input-url {
+    border-radius: 5px;
+    width: 510px;
+}
+textarea {
+    border-radius: 5px;
+    min-width: 510px;
+    min-height: 170px;
+}
+
+.block-ersten-infor {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 41%;
+    border-radius: 5px;
+    border: 1px solid rgba(77, 17, 17);
+    margin-bottom: 11px;
+    margin-left: 21px;
+}
+  
+.block-ersten-infor:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.block-ersten-infor-container {
+    padding: 2px 16px;
+}
+.block-zweiten-infor {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 51%;
+    border-radius: 5px;
+    border: 1px solid rgba(77, 17, 17);
+    margin-bottom: 11px;
+    margin-right: 21px;
+}
+  
+.block-zweiten-infor:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.block-zweiten-infor-container {
+    padding: 2px 16px;
+}
+.block-project {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin-bottom: 11px;
+}
+.block-project:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.block-erste-project-container {
+    padding: 17px;
+}
+.block-zweite-project-container {
+    padding: 11px;
+}
+.block-video-project {
+    width: 37%;
+}
+.block-infor-project {
+    width: 31%;
+}
+.block-brief-project {
+    width: 31%;
+}
+button {
+    max-width: 100%;
+    background-color:#f7f7f7 ;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+button + button {
+    margin-left: .5rem;
+}
+button:hover {
+    border: 2px solid rgba(77, 17, 17);
+    color: rgba(77, 17, 17);
+}
+button:active {
+    border: 2px solid rgba(77, 17, 17);
+    color: rgba(77, 17, 17);
+    transform: translateY(2px);
+}
+button.default {
+    width: 10%;
+    margin: 5px;
+    padding: 2px 1px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(56, 56, 56);
+}
+button.anmeldung {
+    width: 171px;
+    margin: 5px;
+    padding: 2px 1px;
+    border: 1px solid rgb(224, 222, 222);
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(56, 56, 56);
+}
+button.update {
+    width: 275px;
+    margin: 5px;
+    padding: 2px 1px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(77, 17, 17);
+}
+button.delete {
+    width: 175px;
+    margin: 5px;
+    padding: 2px 1px;
+    border: 1px solid rgb(158, 22, 22);
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(151, 11, 11);
+}
+button.toggle {
+    width: 77%;
+    margin-left: 21px;
+    padding: 2px 1px;
+    border: 1px solid rgb(24, 24, 24);
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(29, 29, 29);
+}
+button.edit {
+    width: 51px;
+    margin: 21px;
+    padding: 2px 1px;
+    border: 1px solid rgb(24, 24, 24);
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(29, 29, 29);
+}
+button.logout {
+    width: 71px;
+    margin-left: 21px;
+    padding: 2px 1px;
+    border: 1px solid rgb(223, 108, 108);
+    border-radius: 15px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(179, 160, 160);
+}
+button.personal {
+    width: 101px;
+    padding: 2px 1px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px rgba(63, 48, 48, 0.15);
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(29, 29, 29);
+}
+button.create {
+    width: 51%;
+    margin: 7px;
+    padding: 2px 1px;
+    border: 1px solid rgb(211, 118, 118);
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(29, 29, 29);
+}
+
+#contract-list {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 3px;
+}
+#contract-list th {
+    font-weight: 300;
+    text-align: center;
+    width: 15%;
+    border: 1px solid rgb(211, 172, 172);
+    background-color: rgb(230, 228, 228);
+    padding-right: 7px;
+}
+  
+#contract-list td {
+    text-align: center;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(56, 43, 1);
+}
+.contract-list:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
