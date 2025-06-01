@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react';
+import './SyncedYouTubePlayers.css';
 import YouTube from 'react-youtube';
 
 const videoGroups = [
@@ -106,7 +107,7 @@ const SyncedYouTubePlayers = () => {
 
   return (
     <div style={{ textAlign: 'center', marginTop: '2rem' }}>
-      <h2 style={{ textAlign: 'center', margin: '7rem' }}>{videoGroups[currentGroupIndex].label}</h2>
+      <h2 style={{ textAlign: 'center', margin: '6rem' }}>{videoGroups[currentGroupIndex].label}</h2>
       <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
         <YouTube 
           key={currentGroup.videoId1} 
@@ -125,48 +126,19 @@ const SyncedYouTubePlayers = () => {
           }} 
         />
       </div>
-      <div style={{ marginTop: '20px', textAlign: 'center' }}>
-        <button
-          onClick={syncAndPlay}
-          style={{ 
-            padding: '10px 20px', 
-            fontSize: '16px', 
-            marginRight: '10px', 
-            margin: '0 5px',
-            boxShadow: '0 3px 6px rgba(0,0,0,0.2)',
-            borderRadius: '5px' 
-          }}
-        >
-          ▶️ Play Both
-        </button>
-        <button
-          onClick={stopBoth}
-          style={{ 
-            padding: '10px 20px', 
-            fontSize: '16px', 
-            marginRight: '10px', 
-            margin: '0 5px',          
-            boxShadow: '0 3px 6px rgba(0,0,0,0.2)',
-            borderRadius: '5px' 
-          }}
-        >
-          ⏹️ Stop Both
-        </button>
-      </div>
-      <div style={{ marginTop: '20px', textAlign: 'center' }}>
-        <button
-          onClick={switchGroup}
-          style={{ 
-            padding: '10px 20px',
-            fontSize: '13px', 
-            width: '287px',
-            boxShadow: '0 3px 6px rgba(0,0,0,0.2)',
-            borderRadius: '5px' 
-          }}
-        >
-          🔁 Switch Group
-        </button>
-      </div>
+        <div style={{ marginTop: '20px', textAlign: 'center' }}>
+          <button onClick={syncAndPlay} className="button">
+            ▶️ Play Both
+          </button>
+          <button onClick={stopBoth} className="button">
+            ⏹️ Stop Both
+          </button>
+        </div>
+        <div style={{ marginTop: '20px', textAlign: 'center' }}>
+          <button onClick={switchGroup} className="button button-small">
+            🔁 Switch Group
+          </button>
+        </div>
     </div>
   );
 };
