@@ -1,7 +1,32 @@
+
+.video-container {
+  display: flex;
+  flex-direction: row; /* Default: side-by-side */
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.video-wrapper {
+  position: relative;
+  width: 45%; /* 2 videos side-by-side */
+  padding-bottom: 25.3125%; /* 16:9 aspect ratio (45% of 720px width) */
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* Button styling (same as yours with tweaks) */
 .button {
   padding: 10px 20px;
   font-size: 16px;
-  margin: 0 5px;
+  margin: 5px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   background-color: white;
@@ -17,5 +42,58 @@
 
 .button-small {
   font-size: 13px;
-  width: 287px;
+  width: 90%;
+  max-width: 300px;
+  margin-top: 1rem;
+}
+
+
+
+/* Responsive heading */
+h2 {
+  font-size: 1.5rem;
+  margin: 2rem 1rem;
+}
+
+/* Mobile-specific layout */
+@media (max-width: 768px) {
+
+    /* Layout responsiveness */
+    .video-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: row; /* Default: side-by-side */
+    flex-wrap: wrap;
+    }
+    .video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin-bottom: 1rem;
+    }
+
+    .video-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    }
+    .video-container {
+    flex-direction: column; /* On phones: stack vertically */
+    align-items: center;
+    }
+
+    .button {
+    width: 90%;
+    max-width: 300px;
+    font-size: 14px;
+    }
+
+    h2 {
+        font-size: 1rem;
+        margin: 2rem 0.5rem;
+    } 
 }

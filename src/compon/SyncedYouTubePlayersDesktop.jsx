@@ -96,6 +96,8 @@ const SyncedYouTubePlayers = () => {
   };
 
   const opts = {
+    height: '410',
+    width: '720',
     playerVars: {
       autoplay: 0,
       controls: 1,
@@ -106,34 +108,36 @@ const SyncedYouTubePlayers = () => {
   return (
     <div style={{ textAlign: 'center', marginTop: '2rem' }}>
       <h2 style={{ textAlign: 'center', margin: '6rem' }}>{videoGroups[currentGroupIndex].label}</h2>
-        <div className="video-container">
-            <div className="video-wrapper">
-                <YouTube 
-                key={currentGroup.videoId1} 
-                videoId={currentGroup.videoId1} 
-                onReady={onReady(1)}        
-                />
-            </div>
-            <div className="video-wrapper">
-                <YouTube 
-                key={currentGroup.videoId2} 
-                videoId={currentGroup.videoId2} 
-                onReady={onReady(2)}   
-                />
-            </div>
-        </div>
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
+        <YouTube 
+          key={currentGroup.videoId1} 
+          videoId={currentGroup.videoId1} 
+          opts={opts} onReady={onReady(1)}        
+          style={{
+            boxShadow: '0 1px 3px rgba(0,0,0,0.2)',
+          }} 
+        />
+        <YouTube 
+          key={currentGroup.videoId2} 
+          videoId={currentGroup.videoId2} 
+          opts={opts} onReady={onReady(2)}   
+          style={{
+            boxShadow: '0 1px 3px rgba(0,0,0,0.2)',
+          }} 
+        />
+      </div>
         <div style={{ marginTop: '20px', textAlign: 'center' }}>
-            <button onClick={syncAndPlay} className="button">
+          <button onClick={syncAndPlay} className="button">
             ▶️ Play Both
-            </button>
-            <button onClick={stopBoth} className="button">
+          </button>
+          <button onClick={stopBoth} className="button">
             ⏹️ Stop Both
-            </button>
+          </button>
         </div>
         <div style={{ marginTop: '20px', textAlign: 'center' }}>
-            <button onClick={switchGroup} className="button button-small">
+          <button onClick={switchGroup} className="button button-small">
             🔁 Switch Group
-            </button>
+          </button>
         </div>
     </div>
   );
